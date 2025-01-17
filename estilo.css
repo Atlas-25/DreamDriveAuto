@@ -76,7 +76,7 @@ nav ul li a:hover {
 
 /* Sección quienes-somos */
 #quienes-somos {
-    background-image: url('../img/lemans.jpg'); /* Cambia por tu imagen real */
+    background-image: url('lemans.jpg'); /* Cambia por tu imagen real */
     background-size: cover;
     background-position: center;
     color: #EEF6F9;
