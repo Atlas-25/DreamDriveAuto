@@ -1,0 +1,186 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EEF6F9;
+    color: #1D282E;
+    text-align: center;
+}
+
+h1, h2, h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #1D282E;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #737E80;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+button {
+    background-color: #A0835C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #B1B7BA;
+}
+
+/* Navegación */
+nav {
+    background-color: #737E80;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #A0835C;
+}
+
+/* Sección quienes-somos */
+#quienes-somos {
+    background-image: url('../img/lemans.jpg'); /* Cambia por tu imagen real */
+    background-size: cover;
+    background-position: center;
+    color: #EEF6F9;
+    padding: 50px 0;
+}
+
+#quienes-somos div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#quienes-somos p {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 15px auto;
+    color: #EEF6F9; /* Asegurando que el texto sigue siendo blanco */
+}
+
+
+/* Sección que-hacemos */
+#que-hacemos {
+    background-color: #B1B7BA;
+    padding: 50px 0;
+}
+
+#que-hacemos div {
+    display: flex;
+    justify-content: space-evenly; /* Distribuir columnas uniformemente */
+    align-items: flex-start; /* Alinear columnas en la parte superior */
+    gap: 30px;
+}
+
+#que-hacemos article {
+    background-color: #EEF6F9;
+    border: 2px solid #A0835C;
+    padding: 20px;
+    width: 30%; /* Asegurar que todos los artículos tengan el mismo tamaño */
+    text-align: justify;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#que-hacemos article h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #1D282E;
+    font-weight: bold;
+}
+
+#que-hacemos article p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#que-hacemos article button {
+    position: ; /* Empujar el botón al final del contenedor */
+}
+
+/* Sección donde-estamos */
+#donde-estamos img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #737E80;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1D282E;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Centrado y responsividad */
+.especial {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #quienes-somos div {
+        flex-direction: column;
+    }
+}
